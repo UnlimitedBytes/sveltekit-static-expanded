@@ -1,0 +1,241 @@
+<script type="ts">
+	import NProgress from 'nprogress';
+	import { navigating } from '$app/stores';
+	import { browser } from '$app/env';
+	import { darkMode } from '$lib/global-store';
+
+	import Nav from '$lib/components/Nav.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+
+	import 'nprogress/nprogress.css';
+
+	NProgress.configure({
+		minimum: 0.16
+	});
+
+	$: {
+		if ($navigating) {
+			NProgress.start();
+		}
+
+		if (!$navigating) {
+			NProgress.done();
+		}
+	}
+
+	$: {
+		if (browser) {
+			const body = document.querySelector('body');
+			if (body) {
+				body.dataset.theme = $darkMode ? 'dark' : 'light';
+			}
+		}
+	}
+</script>
+
+<Nav />
+
+<main>
+	<slot />
+</main>
+
+<Footer />
+
+<style type="scss">
+	:global {
+		body {
+			position: relative;
+			min-height: 100vh;
+			font-family: sans-serif;
+			margin: 0;
+			background: #eee;
+			overflow: auto;
+			padding: 4rem 0;
+			box-sizing: border-box;
+		}
+
+		a {
+			text-decoration: none;
+			color: #0d6efd;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #084fb9;
+				text-decoration: none;
+			}
+		}
+
+		button {
+			background: #282c34;
+			border: 1px solid #23272e;
+			color: #eee;
+			padding: 0.5rem 2rem;
+		}
+
+		button:focus,
+		button:hover {
+			background: #23272e;
+		}
+
+		button:active {
+			background: #191c21;
+		}
+
+		blockquote {
+			background: #ddd;
+			border-left: 10px solid #257bb1;
+			margin: 1.5em 10px;
+			padding: 0.5em 10px;
+			quotes: '\201C''\201D''\2018''\2019';
+		}
+
+		hr {
+			border: 1px solid #333;
+			border-radius: 50%;
+			width: 100%;
+		}
+
+		code {
+			background: #ddd;
+			padding: 0.2rem 0.4rem;
+		}
+
+		pre code {
+			background: inherit;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 100%;
+			padding: 0 0.75rem;
+			margin: 0 auto;
+
+			@media screen and (min-width: 576px) {
+				max-width: 540px;
+				padding: 0;
+			}
+
+			@media screen and (min-width: 768px) {
+				max-width: 720px;
+			}
+
+			@media screen and (min-width: 992px) {
+				max-width: 960px;
+			}
+
+			@media screen and (min-width: 1200px) {
+				max-width: 1140px;
+			}
+
+			@media screen and (min-width: 1400px) {
+				max-width: 1320px;
+			}
+		}
+
+		body[data-theme='dark'] {
+			background: #15181c;
+			color: #eee;
+
+			a {
+				color: #1697bb;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: #8fd6e1;
+				}
+			}
+
+			blockquote {
+				background: #23272e;
+				border-left-color: #257bb1;
+			}
+
+			hr {
+				border-color: #05b9d2;
+			}
+
+			code {
+				background-color: #23272e;
+			}
+
+			pre code {
+				background: inherit;
+			}
+
+			::-webkit-scrollbar-thumb {
+				background: #e1e1e1;
+				border-color: #ffffff;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+				background: #ffffff;
+			}
+
+			::-webkit-scrollbar-thumb:active {
+				background: #ffffff;
+			}
+
+			::-webkit-scrollbar-track {
+				background: #666666;
+				border-color: #ffffff;
+			}
+
+			::-webkit-scrollbar-track:hover {
+				background: #666666;
+			}
+
+			::-webkit-scrollbar-track:active {
+				background: #333333;
+			}
+		}
+
+		::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		::-webkit-scrollbar-button {
+			width: 0px;
+			height: 0px;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #0075ff;
+			border: 0px none #0075ff;
+			border-radius: 50px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: #016be4;
+		}
+
+		::-webkit-scrollbar-thumb:active {
+			background: #0164d4;
+		}
+
+		::-webkit-scrollbar-track {
+			background: #b3b3b3;
+			border: 0px none #b3b3b3;
+			border-radius: 50px;
+		}
+
+		::-webkit-scrollbar-track:hover {
+			background: #a3a3a3;
+		}
+
+		::-webkit-scrollbar-track:active {
+			background: #969595;
+		}
+
+		::-webkit-scrollbar-corner {
+			background: transparent;
+		}
+	}
+
+	main {
+		overflow: auto;
+		max-height: calc(100vh - 8rem);
+	}
+</style>
