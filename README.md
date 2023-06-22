@@ -93,7 +93,7 @@ This project exists thanks to all the people who contribute 😍!
 
 [MIT](LICENSE)
 
-Copyright (c) 2022 [UnlimitedBytes][unlimitedbytes]
+Copyright (c) 2023 [UnlimitedBytes][unlimitedbytes]
 
 [yarn]: https://yarnpkg.com
 [nodejs]: https://nodejs.org
