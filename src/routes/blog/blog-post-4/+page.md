@@ -24,43 +24,57 @@ date: '2023-6-22 23:44:20'
 
 ## Introduction:
 
+---
+
 As technology evolves, staying up-to-date with the latest tools and frameworks is essential for developers. SvelteKit, the eagerly anticipated successor to Sapper, has gained significant popularity due to its simplicity and powerful features. In this article, we'll walk you through our journey of updating our SvelteKit template from the beta version to the stable 1.20 release. Join us as we explore the process and improvements that came along the way.
 
 ## Preparing for the Update:
 
+---
+
 Before diving into the update, we made sure to take the necessary precautions to ensure a smooth transition. This included:
 
-- a) Backing up our codebase: We created a backup of our existing SvelteKit beta project to avoid any potential data loss or irreversible changes.
-- b) Reviewing the changelog: We carefully studied the release notes and changelog of SvelteKit 1.20 to understand the changes and new features. This helped us anticipate any potential issues or conflicts.
+-   a) Backing up our codebase: We created a backup of our existing SvelteKit beta project to avoid any potential data loss or irreversible changes.
+-   b) Reviewing the changelog: We carefully studied the release notes and changelog of SvelteKit 1.20 to understand the changes and new features. This helped us anticipate any potential issues or conflicts.
 
 ## Updating Dependencies:
 
+---
+
 To begin the update, we focused on updating the project's dependencies. This involved:
 
-- a) Updating SvelteKit packages: We updated the "@sveltejs/kit" and related packages to their latest stable versions. This step was crucial in ensuring compatibility with the new features and bug fixes introduced in SvelteKit 1.20.
-- b) Resolving compatibility issues: During the dependency update, we encountered a few compatibility issues with other libraries and packages in our project. We carefully resolved these conflicts by updating or replacing incompatible dependencies, ensuring a harmonious integration.
+-   a) Updating SvelteKit packages: We updated the "@sveltejs/kit" and related packages to their latest stable versions. This step was crucial in ensuring compatibility with the new features and bug fixes introduced in SvelteKit 1.20.
+-   b) Resolving compatibility issues: During the dependency update, we encountered a few compatibility issues with other libraries and packages in our project. We carefully resolved these conflicts by updating or replacing incompatible dependencies, ensuring a harmonious integration.
 
 ## Migrating the Configuration:
 
+---
+
 With the dependencies updated, we turned our attention to migrating the project's configuration. This included:
 
-- a) Updating the project structure: SvelteKit 1.20 introduced changes to the project structure, including moving configuration files to the root directory. We updated our project accordingly, adhering to the new structure.
-- b) Updating the config file: We reviewed our existing SvelteKit configuration file and made adjustments to accommodate any breaking changes in the 1.20 release. This included modifying settings related to routing, server-side rendering, and asset handling.
+-   a) Updating the project structure: SvelteKit 1.20 introduced changes to the project structure, including moving configuration files to the root directory. We updated our project accordingly, adhering to the new structure.
+-   b) Updating the config file: We reviewed our existing SvelteKit configuration file and made adjustments to accommodate any breaking changes in the 1.20 release. This included modifying settings related to routing, server-side rendering, and asset handling.
 
 ## Handling API and Server-side Changes:
 
+---
+
 SvelteKit 1.20 brought several improvements and changes related to API endpoints and server-side rendering. We addressed these updates by:
 
-- a) Reviewing API endpoints: We revisited our project's API endpoints and reviewed them for any breaking changes. We updated the necessary code to ensure seamless communication between the client and server.
-- b) Adapting server-side rendering (SSR): SvelteKit 1.20 introduced enhancements to SSR. We modified our existing SSR code to take advantage of the new features and optimize our server-side rendering performance.
+-   a) Reviewing API endpoints: We revisited our project's API endpoints and reviewed them for any breaking changes. We updated the necessary code to ensure seamless communication between the client and server.
+-   b) Adapting server-side rendering (SSR): SvelteKit 1.20 introduced enhancements to SSR. We modified our existing SSR code to take advantage of the new features and optimize our server-side rendering performance.
 
 ## Testing and Debugging:
 
+---
+
 After completing the migration process, we dedicated ample time to testing and debugging. This phase involved:
 
-- a) Manual testing: We thoroughly tested our application's functionalities to identify any regression issues or unexpected behavior introduced during the update. This included testing various routes, components, and data fetching mechanisms.
-- b) Debugging and troubleshooting: In case we encountered any issues, we utilized debugging tools and error tracking mechanisms to quickly identify and resolve them. We actively sought community support through forums, GitHub repositories, and the SvelteKit community to find solutions for any challenging problems.
+-   a) Manual testing: We thoroughly tested our application's functionalities to identify any regression issues or unexpected behavior introduced during the update. This included testing various routes, components, and data fetching mechanisms.
+-   b) Debugging and troubleshooting: In case we encountered any issues, we utilized debugging tools and error tracking mechanisms to quickly identify and resolve them. We actively sought community support through forums, GitHub repositories, and the SvelteKit community to find solutions for any challenging problems.
 
 ## Conclusion:
+
+---
 
 Updating our SvelteKit template from the beta version to the stable 1.20 release was a significant step forward in harnessing the power of the latest features and improvements. Through careful planning, meticulous testing, and community support, we successfully completed the migration process. As developers, it is crucial to stay up-to-date with the latest advancements in frameworks and libraries, enabling us.
