@@ -25,11 +25,13 @@
 	<h1>Our Blog</h1>
 	<ul class="posts">
 		{#each posts as post}
+			{@const url = '/blog' + post.path}
+
 			<li class="post">
-				<h3><a href={'/blog' + post.path}>{post.meta.title}</a></h3>
+				<h3><a href={url}>{post.meta.title}</a></h3>
 				<p>{post.meta.description}</p>
 				<p>
-					<a class="go" href={post.path}>
+					<a class="go" href={url}>
 						<span>Check it out</span>
 						<Icon icon="eva:arrow-forward-fill" style="margin-left: 0.3rem" />
 					</a>
