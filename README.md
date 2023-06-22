@@ -56,11 +56,6 @@ Please make sure to read the [Code of Conduct][code_of_conduct] and the [Contrib
 opening an issue.<br />
 Issues not confirming to the guidelines may be closed immediately.
 
-### Security Vulnerabilities
-
-If you discover a security vulnerability within SvelteKit Static Expanded, please follow our [Security Disclosure Procedures][security]. All
-security vulnerabilities will be promptly addressed.
-
 ### Changelog
 
 Detailed changes for each release are documented in the [release notes][releases].
