@@ -1,8 +1,8 @@
-export const appName = import.meta.env.VITE_APP_NAME;
+import { PUBLIC_APP_NAME, PUBLIC_APP_TITLE } from '$env/static/public';
 
 export const getTitle = (title: string) => {
-	let response = import.meta.env.VITE_APP_TITLE;
-	response = response.replaceAll('%appName%', appName);
+	let response = PUBLIC_APP_TITLE;
+	response = response.replaceAll('%appName%', PUBLIC_APP_NAME);
 	response = response.replaceAll('%title%', title);
 	return response;
 };

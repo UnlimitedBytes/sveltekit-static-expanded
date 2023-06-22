@@ -1,18 +1,6 @@
-<script type="ts" context="module">
-	export async function load() {
-		const joke = await fetch('https://v2.jokeapi.dev/joke/Programming?type=single').then((resp) =>
-			resp.json()
-		);
-		return {
-			props: {
-				hydratedContent: joke ?? { error: true }
-			}
-		};
-	}
-</script>
-
 <script type="ts">
-	export let hydratedContent: { error: boolean; joke?: string };
+	export let data;
+	const { hydratedContent } = data;
 </script>
 
 <div class="container">

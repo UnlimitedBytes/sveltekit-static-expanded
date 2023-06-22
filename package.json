@@ -4,13 +4,12 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
 		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
-		"prepare": "svelte-kit sync",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. .",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"deploy": "wrangler pages publish build"
@@ -18,7 +17,7 @@
 	"devDependencies": {
 		"@iconify/svelte": "^2.2.1",
 		"@sveltejs/adapter-static": "next",
-		"@sveltejs/kit": "next",
+		"@sveltejs/kit": "^1.20.4",
 		"@types/nprogress": "^0.2.0",
 		"mdsvex": "^0.10.6",
 		"nprogress": "^0.2.0",
@@ -26,10 +25,11 @@
 		"prettier-plugin-svelte": "^2.7.0",
 		"prism-themes": "^1.9.0",
 		"sass": "^1.52.3",
-		"svelte": "^3.44.0",
-		"svelte-check": "^2.7.1",
+		"svelte": "^4.0.0",
+		"svelte-check": "^3.4.3",
 		"svelte-preprocess": "^4.10.6",
-		"tslib": "^2.3.1",
-		"typescript": "^4.7.2"
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.3.6"
 	}
 }

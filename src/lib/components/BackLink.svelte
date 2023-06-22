@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -7,7 +7,7 @@
 	<span>Back</span>
 </a>
 
-<style type="scss">
+<style lang="scss">
 	.back-button {
 		display: flex;
 		align-items: center;

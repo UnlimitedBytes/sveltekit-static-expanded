@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
 	const year = new Date().getFullYear();
 </script>
 
@@ -9,7 +9,7 @@
 	</span>
 </footer>
 
-<style type="scss">
+<style lang="scss">
 	footer {
 		position: fixed;
 		bottom: 0;

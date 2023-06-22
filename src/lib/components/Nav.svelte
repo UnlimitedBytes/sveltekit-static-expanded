@@ -1,6 +1,6 @@
-<script type="ts">
+<script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { appName } from '$lib/global-functions';
+	import { PUBLIC_APP_NAME } from '$env/static/public';
 	import { page } from '$app/stores';
 	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 	import { navigating } from '$app/stores';
@@ -27,22 +27,24 @@
 	<div class="container">
 		<nav>
 			<div>
-				<a class="brand" href="/">{appName}</a>
+				<a class="brand" href="/">{PUBLIC_APP_NAME}</a>
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 				<ul class:active={menuActive} bind:this={menuUl} on:click={ulClick}>
 					<li class:active={pathnames[0] === ''}>
-						<a sveltekit:prefetch href="/">Home</a>
+						<a href="/">Home</a>
 					</li>
 
 					<li class:active={pathnames[0] === 'about'}>
-						<a sveltekit:prefetch href="/about">About</a>
+						<a href="/about">About</a>
 					</li>
 
 					<li class:active={pathnames[0] === 'blog'}>
-						<a sveltekit:prefetch href="/blog">Blog</a>
+						<a href="/blog">Blog</a>
 					</li>
 
 					<li class:active={pathnames[0] === 'dynamic'}>
-						<a sveltekit:prefetch href="/dynamic">Dynamic</a>
+						<a href="/dynamic">Dynamic</a>
 					</li>
 				</ul>
 			</div>
@@ -57,7 +59,7 @@
 	</div>
 </header>
 
-<style type="scss">
+<style lang="scss">
 	header {
 		position: fixed;
 		top: 0;

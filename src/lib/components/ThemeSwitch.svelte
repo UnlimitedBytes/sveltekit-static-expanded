@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { darkMode } from '$lib/global-store';
 </script>
@@ -10,7 +10,7 @@
 	<Icon icon={$darkMode ? 'ri:sun-fill' : 'ri:moon-fill'} style="font-size: 24px" />
 </button>
 
-<style type="scss">
+<style lang="scss">
 	button {
 		border: none;
 		background: transparent;

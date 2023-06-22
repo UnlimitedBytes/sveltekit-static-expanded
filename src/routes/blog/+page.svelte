@@ -1,6 +1,4 @@
-<script type="ts" context="module">
-	import { appName, getTitle } from '$lib/global-functions';
-
+<script lang="ts" context="module">
 	export type Post = {
 		meta: {
 			title: string;
@@ -11,13 +9,16 @@
 </script>
 
 <script type="ts">
+	import { PUBLIC_APP_NAME } from '$env/static/public';
+	import { getTitle } from '$lib/global-functions';
 	import Icon from '@iconify/svelte';
-	export let posts: Post[];
+	export let data;
+	const { posts } = data;
 </script>
 
 <svelte:head>
 	<title>{getTitle('Blog')}</title>
-	<meta name="description" content="Blog of {appName}" />
+	<meta name="description" content="Blog of {PUBLIC_APP_NAME}" />
 </svelte:head>
 
 <div class="container">
@@ -25,7 +26,7 @@
 	<ul class="posts">
 		{#each posts as post}
 			<li class="post">
-				<h3><a href={post.path}>{post.meta.title}</a></h3>
+				<h3><a href={'/blog' + post.path}>{post.meta.title}</a></h3>
 				<p>{post.meta.description}</p>
 				<p>
 					<a class="go" href={post.path}>

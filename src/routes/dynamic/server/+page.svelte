@@ -1,6 +1,6 @@
 <script type="ts">
-	export let randomInt: number;
-	let url = 'https:google.com';
+	export let data;
+	const { randomInt } = data;
 </script>
 
 <div class="container">
