@@ -4,6 +4,10 @@ description: We updated the template with all it's features to SvelteKit 1.20.
 date: '2023-6-22 23:44:20'
 ---
 
+<script>
+    import Listen from '$lib/components/Listen.svelte';
+</script>
+
 <style>
     .alert {
         background: #960d0d;
@@ -13,6 +17,8 @@ date: '2023-6-22 23:44:20'
         color: #f58989;
     }
 </style>
+
+<Listen type="disclaimer" src="/audio/disclaimer.mp3" />
 
 <div class="alert">
 

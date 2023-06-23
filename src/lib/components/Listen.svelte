@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let type = 'article';
 	export let src: string;
 
 	let active = false;
@@ -8,7 +9,7 @@
 	{#if active}
 		<audio controls autoplay {src} />
 	{:else}
-		<button on:click={() => (active = true)}>Listen to article</button>
+		<button on:click={() => (active = true)}>Listen to {type}</button>
 	{/if}
 </div>
 
