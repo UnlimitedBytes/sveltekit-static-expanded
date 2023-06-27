@@ -1,6 +1,13 @@
 <script type="ts">
+    import { getTitle } from '$lib/global-functions';
+
     const ip = fetch('https://api.my-ip.io/ip').then((resp) => resp.text());
 </script>
+
+<svelte:head>
+    <title>{getTitle('Dynamic Client')}</title>
+    <meta name="description" content="A dynamic page generated on the client" />
+</svelte:head>
 
 <div class="container">
     <h1>Dynamicly generated on the client</h1>

@@ -28,7 +28,7 @@
             {@const url = '/blog' + post.path}
 
             <li class="post">
-                <h3><a href={url}>{post.meta.title}</a></h3>
+                <h2 class="h3"><a href={url}>{post.meta.title}</a></h2>
                 <p>{post.meta.description}</p>
                 <p>
                     <a class="go" href={url}>

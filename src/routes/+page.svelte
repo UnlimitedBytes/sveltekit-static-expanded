@@ -1,9 +1,11 @@
 <script type="ts">
+    import { PUBLIC_APP_NAME } from '$env/static/public';
     import { getTitle } from '$lib/global-functions';
 </script>
 
 <svelte:head>
     <title>{getTitle('Home')}</title>
+    <meta name="description" content="Landing page of {PUBLIC_APP_NAME}" />
 </svelte:head>
 
 <div class="container">

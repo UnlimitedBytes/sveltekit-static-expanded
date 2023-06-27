@@ -133,9 +133,9 @@ The value of π is: {Math.PI}...
 
 ---
 
--   [x] Write the press release
--   [ ] Update the website
--   [ ] Contact the media
+<div style="display:block"><label><input type="checkbox" disabled="true" checked="true"> Write the press release</label></div>
+<div style="display:block"><label><input type="checkbox" disabled="true"> Update the website</label></div>
+<div style="display:block"><label><input type="checkbox" disabled="true"> Contact the media</label></div>
 
 ## Icons
 
