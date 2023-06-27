@@ -103,10 +103,10 @@ _Italic text content: Lorem ipsum dolor sit amet consectetur adipisicing elit. I
 3. Is
 4. Ordered 😎
 
-- This
-- List
-- Isn't
-- Ordered 😢
+-   This
+-   List
+-   Isn't
+-   Ordered 😢
 
 ## Horizontal rules
 
@@ -133,9 +133,9 @@ The value of π is: {Math.PI}...
 
 ---
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+-   [x] Write the press release
+-   [ ] Update the website
+-   [ ] Contact the media
 
 ## Icons
 
@@ -159,15 +159,15 @@ We can use `inline code` just like this.
 let characters = ['🥳', '🎉', '✨'];
 
 let confetti = new Array(100)
-	.fill(100)
-	.map((_, i) => {
-		return {
-			character: characters[i % characters.length],
-			r: 0.1 + Math.random() * 1
-		};
-	})
-	.sort((a, b) => a.r - b.r)
-	.map((x) => x.character);
+    .fill(100)
+    .map((_, i) => {
+        return {
+            character: characters[i % characters.length],
+            r: 0.1 + Math.random() * 1,
+        };
+    })
+    .sort((a, b) => a.r - b.r)
+    .map((x) => x.character);
 
 /* IT EVEN SUPPORTS SYNTAX HIGHLIGHTING!!! */
 result = confetti.join(' ');

@@ -1,15 +1,15 @@
 <script type="ts">
-	import BackLink from '$lib/components/BackLink.svelte';
+    import BackLink from '$lib/components/BackLink.svelte';
 </script>
 
 <div class="container">
-	<BackLink />
-	<slot />
+    <BackLink />
+    <slot />
 </div>
 
 <style type="scss">
-	.container {
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-	}
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 </style>

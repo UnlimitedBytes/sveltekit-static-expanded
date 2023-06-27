@@ -25,8 +25,8 @@ ticket:
 1.  An expressive title which allows the project maintainers to get a general
     understanding of your issue or feature request.
 2.  A detailed description of the issue or feature request
-    - For issues, please add the necessary steps to reproduce the issue.
-    - For feature requests, add a detailed description of your proposal.
+    -   For issues, please add the necessary steps to reproduce the issue.
+    -   For feature requests, add a detailed description of your proposal.
 
 ## Issue template
 
@@ -73,9 +73,9 @@ New contributors can read the contribution guidelines on their own instead of as
 
 Some examples for projects using a CONTRIBUTING.md are:
 
-- https://example.com/project
-- https://example.com/project2
-- https://example.com/project3
+-   https://example.com/project
+-   https://example.com/project2
+-   https://example.com/project3
 
 For more information, there is a blog article from github on that<br/>
 https://github.blog/2012-09-17-contributing-guidelines/
@@ -88,24 +88,24 @@ https://github.blog/2012-09-17-contributing-guidelines/
 
 Please ensure your pull request adheres to the following guidelines:
 
-- Search previous suggestions, as yours may be a duplicate.
-- Make sure your contribution is useful and relevant.
-- Make an individual pull request for each suggestion.
-- The pull request should be given a meaningful title.
-- All commits should be valid with the commitlint config.
+-   Search previous suggestions, as yours may be a duplicate.
+-   Make sure your contribution is useful and relevant.
+-   Make an individual pull request for each suggestion.
+-   The pull request should be given a meaningful title.
+-   All commits should be valid with the commitlint config.
 
-  ```
-        type(scope): summary
+    ```
+          type(scope): summary
 
-        A paragraph explaining your change in detail (optional).
+          A paragraph explaining your change in detail (optional).
 
-        ref: <link to the bug ticket>
-  ```
+          ref: <link to the bug ticket>
+    ```
 
-- Ensure your text editor removes trailing whitespace and adds a final newline.
-- Ensure your code works and passes any tests (if available).
-- Ensure your code is properly documented.
-- Check your spelling and grammar.
+-   Ensure your text editor removes trailing whitespace and adds a final newline.
+-   Ensure your code works and passes any tests (if available).
+-   Ensure your code is properly documented.
+-   Check your spelling and grammar.
 
 You may merge the pull request in once you have the sign-off of the maintainers, or if you
 do not have permission to do that, you may request the reviewer to merge it for you.

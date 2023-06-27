@@ -8,8 +8,8 @@ This is my second blog post on my blog! 😎
 
 Here is a list of things i like:
 
-- Cats 🐱
-- Cats 😺
-- Cats 😸
-- Cats 😹
-- Cats 🙀
+-   Cats 🐱
+-   Cats 😺
+-   Cats 😸
+-   Cats 😹
+-   Cats 🙀
